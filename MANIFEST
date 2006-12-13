@@ -1,0 +1,12 @@
+Build.PL
+Changes
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/GPS/Babel.pm
+scripts/babel_info.pl
+t/00.load.t
+t/01.babel.t
+t/pod-coverage.t
+t/pod.t
