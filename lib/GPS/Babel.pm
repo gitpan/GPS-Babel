@@ -9,7 +9,7 @@ use IO::Handle;
 use Class::Std;
 use Scalar::Util qw(blessed);
 
-use version; our $VERSION = qv('0.0.1');
+use version; our $VERSION = qv('0.0.3');
 
 my $EXENAME = 'gpsbabel';
 
@@ -340,7 +340,7 @@ GPS::Babel - Perl interface to gpsbabel
 
 =head1 VERSION
 
-This document describes GPS::Babel version 0.0.1
+This document describes GPS::Babel version 0.0.3
 
 =head1 SYNOPSIS
 
@@ -353,7 +353,7 @@ This document describes GPS::Babel version 0.0.1
 
     # Convert a file automatically choosing input and output
     # format based on extension
-    $babel->convert('points.wpt', 'points.gpx', { all => 1 });
+    $babel->convert('points.wpt', 'points.gpx');
     
     # Call gpsbabel directly
     $babel->direct(qw(gpsbabel -i saroute,split 
