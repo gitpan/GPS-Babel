@@ -1,12 +1,14 @@
 Build.PL
 Changes
-MANIFEST
-META.yml
-Makefile.PL
-README
 lib/GPS/Babel.pm
-scripts/babel_info.pl
+Makefile.PL
+MANIFEST
+README
 t/00.load.t
-t/01.babel.t
+t/10.basic.t
+t/20.execute.t
+t/fake-babel.pl
 t/pod-coverage.t
 t/pod.t
+META.yml                                 Module meta-data (added by MakeMaker)
+SIGNATURE                                Public-key signature (added by MakeMaker)
