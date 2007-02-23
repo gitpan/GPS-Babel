@@ -19,4 +19,7 @@ Revision history for GPS-Babel
 
 0.0.6   2007-02-23
         Fixed minor pod formatting issues.
-        
+
+0.0.7   2007-02-23
+        Fixed pod errors caused by use of '=' as a section delimiter for
+        test data.

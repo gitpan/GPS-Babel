@@ -9,7 +9,7 @@ use IO::Handle;
 use Class::Std;
 use Scalar::Util qw(blessed);
 
-use version; our $VERSION = qv( '0.0.6' );
+use version; our $VERSION = qv( '0.0.7' );
 
 my $EXENAME = 'gpsbabel';
 
@@ -385,7 +385,7 @@ GPS::Babel - Perl interface to gpsbabel
 
 =head1 VERSION
 
-This document describes GPS::Babel version 0.0.6
+This document describes GPS::Babel version 0.0.7
 
 =head1 SYNOPSIS
 
