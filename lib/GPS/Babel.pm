@@ -9,7 +9,7 @@ use IO::Handle;
 use Class::Std;
 use Scalar::Util qw(blessed);
 
-use version; our $VERSION = qv( '0.0.4' );
+use version; our $VERSION = qv( '0.0.5' );
 
 my $EXENAME = 'gpsbabel';
 
@@ -60,8 +60,8 @@ sub _with_babel {
     my @args = ( @exe, @{$opts} );
     
     if ($^O =~ /MSWin32/) {
-        # TODO: Need a better shell escape for Windows
-        @args = ( '"' . join('" "', @args) . '"' );
+        # Windows: shell escape and collapse to a single string
+        @args = ( '"' . join('" "', map { s/"/""/g } @args) . '"' );
     }
 
     open( my $fh, $mode, @args )
@@ -385,7 +385,7 @@ GPS::Babel - Perl interface to gpsbabel
 
 =head1 VERSION
 
-This document describes GPS::Babel version 0.0.4
+This document describes GPS::Babel version 0.0.5
 
 =head1 SYNOPSIS
 
