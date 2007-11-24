@@ -1,16 +1,14 @@
 --- #YAML:1.0
 name:                GPS-Babel
-version:             v0.0.7
+version:             0.10
 abstract:            Perl interface to gpsbabel
 license:             perl
-generated_by:        ExtUtils::MakeMaker version 6.32
+generated_by:        ExtUtils::MakeMaker version 6.36_01
 distribution_type:   module
 requires:     
-    Class::Std:                    0
     File::Which:                   0
     Geo::Gpx:                      0.15
     Test::More:                    0
-    version:                       0
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.2.html
     version: 1.2
